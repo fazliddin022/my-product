@@ -1,5 +1,6 @@
 .site-header {
     padding: 19px 0;
+    background-color: $clr-hero;
 }
 
 .header {
@@ -27,11 +28,10 @@
 }
 .header__signin-btn {
     @include BtnStyle($P: 10px 22px, $BC: transparent);
-    border: 1px solid $clr-border;
     @include TetxStyle($FW:600, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-btn, $MB: 0px);
+    border: 1px solid $clr-border;
 }
 .header__sign-up {
     @include BtnStyle($P: 10px 22px,$BC: $clr-green);
-    @include TetxStyle($FW:600, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-white, $MB: 0px);
 }
 

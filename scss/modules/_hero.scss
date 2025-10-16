@@ -1,0 +1,31 @@
+.hero-section {
+    padding: 25px 0 114px;
+    background-color: $clr-hero;
+}
+
+.hero {
+    @include Display($items: center, $justify: start, $gap:0px);
+}
+// .hero__content-wrapper {  
+// }
+.hero__title {
+    width: 420px;
+    @include TetxStyle($FW:700, $FS:40px, $LH:60px, $LS:0px, $CLR: $clr-text, $MB: 18px);
+}
+.hero__text {
+    width: 458px;
+    @include TetxStyle($FW:400, $FS:18px, $LH:28px, $LS:0px, $CLR: $clr-text, $MB: 45px);
+}
+.hero__btn-wrapper {
+    @include Display($items: center, $justify: start, $gap:30px);
+}
+.hero__btn {
+    @include BtnStyle($P: 14px 41px, $BC: $clr-green)
+}
+.hero__link {
+    @include Display($items: center, $justify: start, $gap:8px);
+}
+.hero__link > span {
+    @include TetxStyle($FW:600, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-green, $MB: 0px);
+    border-bottom: 1px solid $clr-green;
+} 

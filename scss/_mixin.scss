@@ -15,9 +15,11 @@
 }
 
 @mixin BtnStyle($P, $BC) {
+    @include TetxStyle($FW:700, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-white, $MB: 0px);
     padding: $P;
     border-radius: 4px;
     border: none;
     background-color: $BC;
     transition: all 0.3s;
+    cursor: pointer;
 }
