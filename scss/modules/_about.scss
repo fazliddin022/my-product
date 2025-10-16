@@ -1,0 +1,35 @@
+.about-section {
+    padding: 114px 0 90px;
+}
+
+.about {
+    @include Display($items: center, $justify: start, $gap:60px);
+    flex-direction: column;
+}
+.about__title-wrapper {
+    max-width: 535px;
+    text-align: center;
+}
+.about__title-wrapper > h3 {
+    @include TetxStyle($FW:700, $FS:32px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 0px);
+}
+.about__list {
+    @include Display($items: start, $justify: start, $gap:46px);
+}
+.about__item {
+    align-items: start;
+    width: 240px;
+}
+.about__item > img {
+    margin-bottom: 30px;
+} 
+.about__item > h4 {
+    @include TetxStyle($FW:600, $FS:22px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 13px);
+}
+.about__item > p {
+    @include TetxStyle($FW:400, $FS:16px, $LH:26px, $LS:0px, $CLR: $clr-text, $MB: 0px);
+    width: 240px;
+}
+.about__btn {
+    @include BtnStyle($P:14px 32px, $BC: $clr-green);
+}
