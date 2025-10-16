@@ -1,0 +1,37 @@
+.site-header {
+    padding: 19px 0;
+}
+
+.header {
+    @include Display($items: center, $justify: space-between, $gap:0px);
+}
+// .header__left-content {
+// }
+// .header__logo-link {
+// }
+.header__right-content {
+    @include Display($items: center, $justify: start, $gap:24px);
+}
+.header__navbar {
+    @include Display($items: center, $justify: start, $gap:25px)
+}
+.header__link {
+    display: inline-block;
+    @include TetxStyle($FW:600, $FS:16px, $LH:28px, $LS:0px, $CLR: $clr-text, $MB: 0px);
+    & + & {
+        @include TetxStyle($FW:400, $FS:16px, $LH:28px, $LS:0px, $CLR: $clr-text, $MB: 0px);
+    }
+}
+.header__btn {
+    @include Display($items: center, $justify: start, $gap:24px);
+}
+.header__signin-btn {
+    @include BtnStyle($P: 10px 22px, $BC: transparent);
+    border: 1px solid $clr-border;
+    @include TetxStyle($FW:600, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-btn, $MB: 0px);
+}
+.header__sign-up {
+    @include BtnStyle($P: 10px 22px,$BC: $clr-green);
+    @include TetxStyle($FW:600, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-white, $MB: 0px);
+}
+

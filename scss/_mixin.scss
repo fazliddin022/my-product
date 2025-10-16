@@ -1,0 +1,23 @@
+@mixin Display($items, $justify, $gap){
+    display: flex;
+    align-items: $items;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin TetxStyle($FW, $FS, $LH, $LS, $CLR, $MB) {
+    font-weight: $FW;
+    font-size: $FS;
+    line-height: $LH;
+    letter-spacing: $LS;
+    color: $CLR;
+    margin-bottom: $MB;
+}
+
+@mixin BtnStyle($P, $BC) {
+    padding: $P;
+    border-radius: 4px;
+    border: none;
+    background-color: $BC;
+    transition: all 0.3s;
+}
