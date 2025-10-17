@@ -1,0 +1,59 @@
+.work-section {
+    padding: 150px 0;
+}
+.work__left-content {
+    @include Display($items: center, $justify: start, $gap:84px);
+}
+.work__left-wrapper{
+    width: 486px;
+}
+.work__content-text{
+    @include TetxStyle($FW:600, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 12px);
+}
+.work__title {
+    @include TetxStyle($FW:700, $FS:32px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 13px);
+}
+.work__text {
+    @include TetxStyle($FW:400, $FS:16px, $LH:26px, $LS:0px, $CLR: $clr-text, $MB: 13px);
+}
+.work__right-content {
+    margin: 150px 0;
+    @include Display($items: center, $justify: start, $gap:94px);
+}
+.work__right-wrapper {
+    width: 486px;
+}
+.work__right-title {
+    @include TetxStyle($FW:700, $FS:32px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 23px);
+}
+.work__text {
+    @include TetxStyle($FW:400, $FS:16px, $LH:26px, $LS:0px, $CLR: $clr-text, $MB: 30px);
+}
+.work__right-item {
+    @include Display($items: center, $justify: start, $gap:30px);
+} 
+.work__content-text-title {
+    @include TetxStyle($FW:700, $FS:32px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 23px);
+}
+
+@media(max-width:890px) {
+    .work__left-content {
+        @include  Display ($items: center, $justify:space-between, $gap: 0px);
+        flex-direction: column-reverse;
+    }
+    .work__right-content {
+        @include  Display ($items: center, $justify:space-between, $gap: 0px);
+        flex-direction: column;
+
+    }
+    .work__right-wrapper {
+        width: 100%;
+    }
+    .work__left-wrapper{
+        width: 100%;
+    }
+    .work__img{
+        width: 100%;
+        margin-bottom: 100px;
+    } 
+}

@@ -1,5 +1,8 @@
 .about-section {
     padding: 114px 0 90px;
+    background-image: url("../images/image/about-bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .about {
@@ -7,8 +10,10 @@
     flex-direction: column;
 }
 .about__title-wrapper {
-    max-width: 535px;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
+    margin-bottom: 66px;
 }
 .about__title-wrapper > h3 {
     @include TetxStyle($FW:700, $FS:32px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 0px);
@@ -17,7 +22,7 @@
     @include Display($items: start, $justify: start, $gap:46px);
 }
 .about__item {
-    align-items: start;
+    text-align: start;
     width: 240px;
 }
 .about__item > img {
@@ -28,8 +33,26 @@
 }
 .about__item > p {
     @include TetxStyle($FW:400, $FS:16px, $LH:26px, $LS:0px, $CLR: $clr-text, $MB: 0px);
-    width: 240px;
 }
 .about__btn {
     @include BtnStyle($P:14px 32px, $BC: $clr-green);
+}
+
+@media(max-width:1263px) {
+    .about__list {
+        @include  Display ($items: center, $justify:center, $gap: 32px);   
+        flex-direction: column;
+    }
+    .about__item {
+        text-align: center;
+    }
+    .about__item > img {
+        margin-bottom: 24px;
+    }
+    .about__item > h4 {
+        @include TetxStyle($FW:600, $FS:22px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 8px);
+    }
+    .about__item > p {
+        @include TetxStyle($FW:400, $FS:16px, $LH:26px, $LS:0px, $CLR: $clr-text, $MB: 32px);
+    }
 }
