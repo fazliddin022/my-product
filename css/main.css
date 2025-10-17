@@ -129,6 +129,25 @@ button {
   cursor: pointer;
 }
 
+.header__menu-icon {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 920px) {
+  .header__navbar {
+    display: none;
+  }
+  .header__menu-icon {
+    display: block;
+  }
+}
+@media (max-width: 790px) {
+  .header__btn, .header__dark-link {
+    display: none;
+  }
+}
 .hero-section {
   padding: 25px 0;
 }

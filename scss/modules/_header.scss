@@ -34,3 +34,23 @@
     @include BtnStyle($P: 10px 22px,$BC: $clr-green);
 }
 
+.header__menu-icon {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+@media(max-width: 920px) {
+    .header__navbar {
+        display: none;
+    }
+    .header__menu-icon {
+        display: block;
+    }
+}
+
+@media(max-width:790px) {
+    .header__btn, .header__dark-link {
+        display: none;
+    }
+}
