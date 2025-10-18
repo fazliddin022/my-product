@@ -1,0 +1,57 @@
+.review-section {
+    padding-bottom: 150px;
+}
+.review__header {
+    width: 466px;
+    margin:  0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.review__title {
+    @include TetxStyle($FW:700, $FS:34px, $LH:57px, $LS:0.2px, $CLR: $clr-text, $MB: 8px);
+    text-align: center;
+}
+.review__subtitle {
+    @include TetxStyle($FW:500, $FS:16px, $LH:28px, $LS:0.2px, $CLR: $clr-text, $MB: 0px);
+    text-align: center;
+}
+.review__list {
+    @include Display($items: center, $justify:start, $gap:64px);
+}
+.review__item {
+    width: 327px;
+    border: 1px solid   #DEDEDE;
+    border-radius: 5px;
+    padding: 28px;
+}
+.review__item__text {
+    @include TetxStyle($FW:400, $FS:16px, $LH:28px, $LS:0.2px, $CLR: $clr-text, $MB: 16px);
+    margin-top: 16px;
+}
+.review__bottom__content {
+    @include Display($items: center, $justify:start, $gap:14px);
+}
+.review__item__author {
+    @include Display($items: start, $justify:start, $gap:0px);
+    flex-direction: column;
+}
+.review__text__change-color {
+    @include TetxStyle($FW:600, $FS:16px, $LH:24px, $LS:0.2px, $CLR: $clr-green, $MB: 0px);
+}
+.review__item__author-role {
+    @include TetxStyle($FW:500, $FS:14px, $LH:24px, $LS:0.2px, $CLR: $clr-text, $MB: 0px);
+}
+
+@media(max-width:981px) {
+    .review__list {
+        @include Display($items: center, $justify:start, $gap:32px);
+        flex-direction: column;
+    }
+    .review__header {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .review__subtitle {
+        width: 100%;
+    }
+}
