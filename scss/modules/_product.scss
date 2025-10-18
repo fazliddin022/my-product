@@ -1,0 +1,47 @@
+.product-section {
+    padding-bottom: 150px;
+}
+.product {
+    padding: 0px 75px;
+}
+.product__content {
+    padding: 14px 51px;
+    background-color: $clr-green;
+    border-radius: 32px;
+    @include Display($items: center, $justify:space-between, $gap:0px);
+}
+.product__wrapper {
+    width: 514px;
+}
+.product__title {
+    @include TetxStyle($FW:600, $FS:32px, $LH:151%, $LS:0px, $CLR: $clr-white, $MB: 49px);
+}
+.product__btn {
+    @include BtnStyle($P: 13px 35px, $BC: $clr-white);
+    color: $clr-green;
+}
+
+@media(max-width:950px) {
+    .product-section {
+        padding-bottom: 100px;
+    }
+    .product {
+        padding: 0 20px;
+    }
+    .product__content {
+        flex-direction: column;
+    }
+    .product__wrapper {
+        width: 100%;
+        padding: 17px 22px;
+        @include  Display ($items: center, $justify:space-between, $gap:0px);
+        flex-direction: column;
+    }
+    .product__title {
+        width: 100%;
+        text-align: center;
+    }
+    .product__button{
+        text-align: center;
+    }
+}
