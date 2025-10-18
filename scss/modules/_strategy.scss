@@ -1,0 +1,50 @@
+.strategy-section {
+    padding-bottom: 229px;
+}
+.strategy__top-title {
+    @include TetxStyle($FW:700, $FS:34px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 8px);
+}
+.strategy__top-text {
+    @include TetxStyle($FW:500, $FS:16px, $LH:26px, $LS:0px, $CLR: $clr-text, $MB: 33px);
+}
+.strategy__list {
+    width: 100%;
+    @include Display($items: center, $justify:start, $gap:32px);
+}
+.strategy__item-card {
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+}
+.strategy__card-content {
+    padding: 24px 30px 40px 24px;
+}
+
+.strategy__card-content > p {
+    @include TetxStyle($FW:400, $FS:16px, $LH:28px, $LS:0px, $CLR: $clr-text, $MB: 12px);
+}
+.strategy__text {
+     @include TetxStyle($FW:700, $FS:24px, $LH:40px, $LS:0px, $CLR: $clr-text, $MB: 0px);
+}
+.strategy__text--change {
+    color: $clr-green;
+}
+
+@media (max-width:1100px) {
+    .strategy__top-title {
+        width: 100%;
+        text-align: center;
+    }
+    .strategy__top-text {
+        width: 100%;
+        text-align: center;
+    }
+    .strategy-section {
+        padding-bottom: 67px;
+    }
+    .strategy__list {
+        flex-direction: column-reverse;
+    }
+    .strategy__card-content {
+        width: 348px;
+    }
+}

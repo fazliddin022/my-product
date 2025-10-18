@@ -617,4 +617,84 @@ button {
   .process__item-text {
     width: 100%;
   }
+}
+.strategy-section {
+  padding-bottom: 229px;
+}
+
+.strategy__top-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #22343D;
+  margin-bottom: 8px;
+}
+
+.strategy__top-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #22343D;
+  margin-bottom: 33px;
+}
+
+.strategy__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 32px;
+}
+
+.strategy__item-card {
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+}
+
+.strategy__card-content {
+  padding: 24px 30px 40px 24px;
+}
+
+.strategy__card-content > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #22343D;
+  margin-bottom: 12px;
+}
+
+.strategy__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #22343D;
+  margin-bottom: 0px;
+}
+
+.strategy__text--change {
+  color: #02897A;
+}
+
+@media (max-width: 1100px) {
+  .strategy__top-title {
+    width: 100%;
+    text-align: center;
+  }
+  .strategy__top-text {
+    width: 100%;
+    text-align: center;
+  }
+  .strategy-section {
+    padding-bottom: 67px;
+  }
+  .strategy__list {
+    flex-direction: column-reverse;
+  }
+  .strategy__card-content {
+    width: 348px;
+  }
 }/*# sourceMappingURL=main.css.map */
