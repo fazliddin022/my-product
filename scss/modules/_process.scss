@@ -1,0 +1,78 @@
+.process-section {
+    padding: 52px 0 150px;
+    background-image:  url("../../images/image/process-bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.process {
+    padding: 0 115px;
+}
+.process__top-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.process__title {
+    @include TetxStyle($FW:700, $FS:32px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 16px);
+}
+.process__text {
+    @include TetxStyle($FW:500, $FS:16px, $LH:26px, $LS:0px, $CLR: $clr-text, $MB: 0px);
+    width: 542px;
+    margin:  0 auto;
+}
+.process__comment {
+    @include Display($items: center, $justify:space-between, $gap: 0px);
+    margin-bottom: 48px;
+}
+.process__item {
+    @include Display($items: center, $justify:start, $gap: 16px);
+}
+.process__item-text {
+    @include TetxStyle($FW:500, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 16px);
+    padding: 15px 24px 20px; 
+    box-shadow: 0px 2px 15px 0px #173A561A;
+    border-radius: 26px;
+}
+
+.process__button {
+    @include Display($items: center, $justify:center, $gap: 0px);
+}
+.process__btn {
+    @include BtnStyle($P:15px 31px, $BC: $clr-green)
+}
+
+@media(max-width:996px) {
+    .process-section {
+        padding: 73px 0 100px;
+    }
+    .process {
+        padding: 0;
+    }
+    .process__top-title {
+        margin-bottom: 39px;
+    }
+    .process__title {
+        width: 100%;
+        @include TetxStyle($FW:700, $FS:38px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 16px);
+    }
+    .process__text {
+        width: 100%;
+        margin:  0 auto;
+        @include TetxStyle($FW:500, $FS:16px, $LH:100%, $LS:0px, $CLR: $clr-text, $MB: 0px);
+    }
+    .process__comment {
+        width: 100%;
+        @include Display($items: center, $justify:start, $gap: 32px);
+        flex-direction: column;
+    }
+    .process__list-left {   
+        @include Display($items: center, $justify:space-between, $gap: 32px);
+        flex-direction: column;
+    }
+    .process__list-right {
+        @include Display($items: center, $justify:start, $gap: 32px);
+        flex-direction: column-reverse;
+    }
+    .process__item-text {
+        width: 100%;
+    }
+}
