@@ -1,0 +1,78 @@
+.site-footer {
+    padding-bottom: 46px;
+}
+.footer__wrapper {
+    @include Display ($items:start, $justify:space-between, $gap: 0px);
+    margin-bottom: 30px ; 
+}
+.footer__left-part {
+    @include Display($items: center, $justify:start, $gap:24px);
+    flex-direction: column;
+}
+.footer__social-link {
+    background-color: #EDFFFC;
+    color: #EDFFFC;
+}
+.footer__nav-part {
+    @include Display($items: center, $justify:space-between, $gap:129px);
+}
+
+.footer__title {
+    @include TetxStyle($FW:500, $FS:20px, $LH:30px, $LS:0px, $CLR: $clr-text, $MB: 8px);
+}
+.footer__link {
+    @include TetxStyle($FW:400, $FS:16px, $LH:35px, $LS:0px, $CLR: $clr-text, $MB: 8px);
+}
+
+.footer__right-part {
+    width: 325px;
+    text-align: start;
+}
+.footer__right-title {
+    @include TetxStyle($FW:500, $FS:20px, $LH:30px, $LS:0px, $CLR: $clr-text, $MB: 34px);
+}
+.footer__form {
+}
+.footer__input {
+    width: 325px;
+    padding: 10px 0 10px 15px;
+    background: $clr-white;
+    border: 1px solid #BCD0E5;
+    box-shadow: 0px 1px 2px 0px #00000040;
+    border-radius: 4px;
+    margin-bottom: 21px;
+}
+
+.footer__btn {
+    @include BtnStyle($P:8px 15px, $BC: $clr-green);
+}
+.footer__text {
+    text-align: center;
+    @include TetxStyle($FW:400, $FS:16px, $LH:30px, $LS:0px, $CLR: $clr-text, $MB: 8px);
+}
+
+@media (max-width:970px) {
+    .footer__wrapper {
+        @include Display ($items:center, $justify:start, $gap: 31px);
+        flex-direction: column;
+        margin-bottom: 44px ; 
+    }
+    .footer__nav-part {
+        @include Display($items: center, $justify:start, $gap:32px);
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__right-part {
+        width: 100%;
+    }
+    .footer__right-title {
+        text-align: center;
+        @include TetxStyle($FW:500, $FS:20px, $LH:30px, $LS:0px, $CLR: $clr-text, $MB: 34px);
+    }
+    .footer__form{
+        text-align: center;
+    }
+    .footer__input {
+        width: 100%;
+    }
+}
